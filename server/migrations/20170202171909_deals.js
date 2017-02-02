@@ -7,7 +7,7 @@ exports.up = (knex, Promise) => {
    t.interger('price')
    t.interger('stock')
    t.boolean('deal')
- }
+ })
 }
 
 exports.down = (knex, Promise) => knex.schema.dropTableIfExists('deals')
