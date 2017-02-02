@@ -3,7 +3,9 @@ const knexConfig = require('../knexfile')[process.env.NODE_ENV || 'development']
 
 const knex = Knex(knexConfig)
 
-const getDeals () => knex('deals')
+function getDeals (){
+  return knex('deals')
+}
 
 module.exports = {
   getDeals
