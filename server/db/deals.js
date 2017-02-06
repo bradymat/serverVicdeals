@@ -8,7 +8,7 @@ function getDeals () {
 }
 
 function addDeal (deal) {
-  return knex('deals').insert(deal)
+  return knex('deals').insert({name: 'Passenger', poster: 'https://image.tmdb.org/t/p/original/5gJkVIVU7FDp7AfRAbPSvvdbre2.jpg', price: 15, stock: 6})
 }
 
 module.exports = {
