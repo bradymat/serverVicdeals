@@ -13,6 +13,7 @@ router.get('/', function(req, res) {
 })
 
 router.post('/', function(req, res){
+  console.log(req.body);
   dealsDb.addDeal(req.body)
     .then((dealInfo) => {
       res.json({dealInfo}).status(201)

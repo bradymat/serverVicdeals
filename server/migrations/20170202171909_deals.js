@@ -4,9 +4,10 @@ exports.up = (knex, Promise) => {
    t.increments('id')
    t.string('name')
    t.string('poster')
-   t.integer('price')
-   t.integer('stock')
-   t.boolean('deal').defaultTo(false)
+   t.string('deal')
+   t.string('details')
+   t.string('link')
+   t.boolean('featured').defaultTo(false)
  })
 }
 
