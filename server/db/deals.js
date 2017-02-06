@@ -12,5 +12,6 @@ function addDeal (deal) {
 }
 
 module.exports = {
-  getDeals
+  getDeals,
+  addDeal
 }
