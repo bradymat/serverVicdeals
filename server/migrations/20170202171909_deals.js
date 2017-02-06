@@ -6,7 +6,7 @@ exports.up = (knex, Promise) => {
    t.string('poster')
    t.integer('price')
    t.integer('stock')
-   t.boolean('deal')
+   t.boolean('deal').defaultTo(false)
  })
 }
 
